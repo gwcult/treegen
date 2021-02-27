@@ -11,14 +11,14 @@ public class SimpleTest implements WithAssertions {
 
     @Test
     public void indexTest() {
-        String item = userNode.emails().get(0).get(1).getValue();
-        assertThat(item).isEqualTo("b");
+        String item = userNode.tasks().get(0).get(1).getValue();
+        assertThat(item).isEqualTo("task12");
     }
 
     @Test
     public void listPathTest() {
-        ValueNode<String> emailItemNode = userNode.emails().get(0).get(1);
-        assertThat(Utils.getPath(emailItemNode)).isEqualTo("emails[0][1]");
+        ValueNode<String> emailItemNode = userNode.tasks().get(0).get(1);
+        assertThat(Utils.getPath(emailItemNode)).isEqualTo("tasks[0][1]");
     }
 
     @Test
