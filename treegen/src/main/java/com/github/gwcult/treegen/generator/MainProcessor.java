@@ -15,7 +15,6 @@ import java.util.stream.Collectors;
 
 import static com.github.gwcult.treegen.generator.utils.Utils.getterToFieldName;
 
-@Slf4j
 @SupportedAnnotationTypes("com.github.gwcult.treegen.TreeGen")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 @AutoService(Processor.class)
