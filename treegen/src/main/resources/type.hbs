@@ -1,0 +1,3 @@
+{{#if data.simple}}ValueNode<{{data.name}}>{{/if ~}}
+{{#if data.extended}}{{data.name}}Node{{/if ~}}
+{{#if data.list}}NodeList<{{>type data=data.subType}}>{{/if ~}}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$/../treegen">
+      <sourceFolder url="file://$MODULE_DIR$/../treegen/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../treegen/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../treegen/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/../treegen/target" />
+    </content>
+    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.github.jknack:handlebars:4.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.18.10" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.30" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.7.30" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.auto.service:auto-service:1.0-rc2" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.auto:auto-common:0.3" level="project" />
+    <orderEntry type="library" name="Maven: com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.googlejavaformat:google-java-format:1.9" level="project" />
+  </component>
+</module>

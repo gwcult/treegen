@@ -1,0 +1,3 @@
+{{#if data.simple}}new ValueNode.Builder<{{data.name}}>(){{/if ~}}
+{{#if data.extended}}new {{data.name}}Node.Builder(){{/if ~}}
+{{#if data.list}}{{>builder data=data.subType}}.asList(){{/if ~}}

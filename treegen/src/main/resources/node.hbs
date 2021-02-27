@@ -1,0 +1,35 @@
+package {{packageName}};
+
+import com.github.gwcult.treegen.tree.AbstractNodeBuilder;
+import com.github.gwcult.treegen.tree.NodeList;
+import com.github.gwcult.treegen.tree.ValueNode;
+import com.github.gwcult.treegen.tree.Node;
+
+{{#each imports ~}}
+import {{.}};
+{{/each}}
+
+public class {{nodeName}} extends ValueNode<{{valueType}}> {
+    public static class Builder extends AbstractNodeBuilder<{{valueType}}, {{nodeName}}> {
+        public {{nodeName}} build({{valueType}} value) {
+            return new {{nodeName}}(parent, name, value);
+        }
+    }
+
+    public {{nodeName}}(
+        Node parent,
+        String name,
+        {{valueType}} value
+    ) {
+        super(parent, name, value);
+    }
+
+    {{#each fields}}
+    public {{>type data=type}} {{name}}() {
+        return {{>builder data=type}}
+            .asChild(this, "{{name}}")
+            .build(getValue() != null ? getValue().{{getter}}() : null);
+    }
+
+    {{/each}}
+}
